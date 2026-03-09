@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Admin Panel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Teacher Admin Panel</h2>
+
+<button onclick="showPayments()">Show Payment Requests</button>
+
+<div id="list"></div>
+
+<script>
+
+function showPayments(){
+
+let data = "";
+
+for(let i=0;i<localStorage.length;i++){
+
+let name = localStorage.key(i);
+let txn = localStorage.getItem(name);
+
+data += name + " - TXN: " + txn + "<br>";
+
+}
+
+document.getElementById("list").innerHTML = data;
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Tuition Payment</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Student Login</h2>
+
+<input type="text" id="username" placeholder="Enter Name">
+<br><br>
+
+<input type="password" id="password" placeholder="Enter Password">
+<br><br>
+
+<button onclick="login()">Login</button>
+
+<div id="payment" style="display:none">
+
+<h2>Pay Tuition Fee</h2>
+
+<p>UPI ID: teacher@upi</p>
+
+<img src="qr.png" width="200">
+
+<br><br>
+
+<button onclick="paid()">YES I PAID</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
